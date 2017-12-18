@@ -193,9 +193,11 @@ Mainline UrJTAG has DirtyJTAG support since [763bbc](https://sourceforge.net/p/u
 cd /tmp
 git clone https://git.code.sf.net/p/urjtag/git urjtag-git
 cd urjtag-git/urjtag/
+# you will need to install: autoreconf autopoint libtool
 ./autogen.sh
 make
 sudo make install
+sudo ldconfig
 ```
 
 Then, you can use DirtyJTAG like any other JTAG cable in UrJTAG :
